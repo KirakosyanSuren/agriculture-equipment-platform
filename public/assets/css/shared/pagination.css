@@ -1,0 +1,26 @@
+.pagination{
+    display:flex;
+    justify-content:center;
+    gap:14px;
+    margin-top:70px;
+    flex-wrap:wrap;
+}
+
+.pagination a{
+    width:52px;
+    height:52px;
+    border-radius:14px;
+    background:#111814;
+    border:1px solid rgba(255,255,255,.06);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    transition:.3s;
+    font-weight:700;
+}
+
+.pagination a:hover,
+.pagination a.active{
+    background:var(--green);
+    color:black;
+}

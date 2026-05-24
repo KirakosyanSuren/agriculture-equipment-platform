@@ -1,0 +1,58 @@
+.input-group{
+    margin-bottom:28px;
+}
+
+.admin-filter-input {
+    min-width: 200px;
+}
+
+.input-group label{
+    display:block;
+    margin-bottom:14px;
+    font-weight:600;
+    color:#cfd6cf;
+}
+
+.input-group select,
+.input-group input,
+.input-group textarea {
+    width:100%;
+    height:56px;
+    border-radius:16px;
+    border:1px solid rgba(255,255,255,.08);
+    background:#131a15;
+    color:white;
+    padding:0 18px;
+    outline:none;
+    font-size:15px;
+}
+
+.input-group textarea {
+    height: auto;
+    padding: 18px 20px
+}
+
+.input-group textarea{
+    resize:none;
+}
+
+.input-group input:focus,
+.input-group select:focus,
+.input-group textarea:focus{
+    border-color:rgba(102,255,102,.5);
+    box-shadow:
+        0 0 0 4px rgba(102,255,102,.08);
+}
+
+.error-text{
+    margin-top:6px;
+    color:#ff4d4f !important;
+    font-size:14px;
+    font-weight:500;
+    line-height:1.4;
+}
+
+.input-error{
+    border-color:#ff4d4f !important;
+}
+

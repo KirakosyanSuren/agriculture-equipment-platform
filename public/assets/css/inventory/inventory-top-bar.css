@@ -1,0 +1,35 @@
+.inventory-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom:40px;
+    gap:20px;
+    flex-wrap:wrap;
+}
+
+.inventory-top h2{
+    font-family:'Oswald',sans-serif;
+    font-size:60px;
+    text-transform:uppercase;
+}
+
+.inventory-top p{
+    color:#aab3aa;
+}
+
+.sort-box{
+    display:flex;
+    align-items:center;
+    gap:14px;
+}
+
+.sort-box select{
+    width:220px;
+    height:52px;
+    border-radius:14px;
+    background:#121814;
+    border:1px solid rgba(255,255,255,.08);
+    color:white;
+    padding:0 16px;
+    outline:none;
+}

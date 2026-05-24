@@ -1,0 +1,93 @@
+/* =========================================
+   CHECKBOX
+========================================= */
+
+.admin-checkbox{
+    display:flex;
+    align-items:center;
+    gap:14px;
+
+    cursor:pointer;
+
+    user-select:none;
+}
+
+.admin-checkbox input{
+    display:none;
+}
+
+/* UI */
+
+.admin-checkbox-ui{
+    position:relative;
+
+    width:28px;
+    height:28px;
+
+    flex-shrink:0;
+
+    border-radius:10px;
+
+    background:
+        rgba(255,255,255,.05);
+
+    border:
+        1px solid rgba(255,255,255,.08);
+
+    transition:.3s;
+}
+
+/* DOT */
+
+.admin-checkbox-dot{
+    position:absolute;
+
+    top:50%;
+    left:50%;
+
+    width:14px;
+    height:14px;
+
+    border-radius:50%;
+
+    background:
+        linear-gradient(135deg,
+        #8cffb5,
+        #58d98d);
+
+    transform:
+        translate(-50%,-50%)
+        scale(0);
+
+    transition:.3s;
+}
+
+/* ACTIVE */
+
+.admin-checkbox input:checked
++ .admin-checkbox-ui{
+
+    border-color:
+        rgba(140,255,181,.4);
+
+    background:
+        rgba(140,255,181,.08);
+}
+
+.admin-checkbox input:checked
++ .admin-checkbox-ui
+.admin-checkbox-dot{
+
+    transform:
+        translate(-50%,-50%)
+        scale(1);
+}
+
+/* LABEL */
+
+.admin-checkbox-label{
+    color:white;
+
+    font-size:15px;
+    font-weight:500;
+}

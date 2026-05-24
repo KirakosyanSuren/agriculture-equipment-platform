@@ -1,0 +1,235 @@
+header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    z-index:999;
+    backdrop-filter:blur(16px);
+    background:rgba(0,0,0,.72);
+    border-bottom:1px solid rgba(255,255,255,.06);
+}
+
+.nav{
+    height:90px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
+
+.logo{
+    font-family:'Oswald',sans-serif;
+    font-size:38px;
+    color:var(--green);
+    font-weight:700;
+    letter-spacing:1px;
+}
+
+.logo span{
+    color:white;
+}
+
+.nav-links{
+    display:flex;
+    gap:34px;
+    align-items:center;
+}
+
+.nav-links li{
+    list-style:none;
+    position:relative;
+}
+
+.nav-links a{
+    font-size:14px;
+    text-transform:uppercase;
+    font-weight:600;
+    transition:.3s;
+    color:white;
+}
+
+.nav-links a:hover{
+    color:var(--green);
+}
+
+.nav-links .active {
+    color:var(--green);
+}
+
+
+.dropdown{
+    position:absolute;
+    top:40px;
+    left:0;
+    background:#0b120d;
+    width:230px;
+    border-radius:18px;
+    padding:14px 0;
+    border:1px solid var(--border);
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(12px);
+    transition:.35s;
+}
+
+.dropdown a{
+    display:block;
+    padding:14px 20px;
+    font-size:14px;
+    color:#c8d5c8;
+}
+
+.dropdown a:hover{
+    background:rgba(102,255,102,.1);
+    color:var(--green);
+}
+
+.nav-links li:hover .dropdown{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+.burger{
+    display:none;
+    flex-direction:column;
+    gap:6px;
+    cursor:pointer;
+}
+
+.burger span{
+    width:30px;
+    height:3px;
+    background:white;
+    border-radius:10px;
+}
+
+@media(max-width:1200px){
+
+    .nav-links{
+        position:fixed;
+        top:90px;
+        left:-100%;
+        width:100%;
+        height:calc(100vh - 90px);
+        background:#050805;
+        flex-direction:column;
+        align-items:flex-start;
+        gap:0;
+        padding:30px;
+        transition:.4s ease;
+        overflow-y:auto;
+    }
+
+    .nav-links.active{
+        left:0;
+    }
+
+    .nav-links li{
+        width:100%;
+        border-bottom:1px solid rgba(255,255,255,.05);
+    }
+
+    .nav-links li:last-child{
+        border-bottom:none;
+    }
+
+    .nav-links li a{
+        width:100%;
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+        padding:22px 0;
+        font-size:16px;
+        color:white;
+    }
+
+    .nav-links li a:hover{
+        color:var(--green);
+    }
+
+    /* DROPDOWN */
+
+    .dropdown{
+        position:static;
+        width:100%;
+        background:transparent;
+        border:none;
+        border-radius:0;
+        padding:0 0 15px 15px;
+        opacity:1;
+        visibility:visible;
+        transform:none;
+        display:none;
+    }
+
+    .dropdown a{
+        padding:14px 0;
+        font-size:15px;
+        color:#b7c0b7;
+        border:none;
+        background:none;
+    }
+
+    .dropdown a:hover{
+        background:none;
+        color:var(--green);
+        transform:translateX(6px);
+    }
+
+    .dropdown-toggle{
+        display:flex;
+        align-items:center;
+        justify-content:space-between;
+    }
+
+    .dropdown-icon{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+
+        transition:.3s ease;
+    }
+
+    .nav-dropdown.active .dropdown-icon{
+        transform:rotate(180deg);
+    }
+
+    /* OPEN DROPDOWN */
+
+    .nav-links li.active .dropdown{
+        display:block;
+    }
+
+    /* BURGER */
+
+    .burger{
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        gap:6px;
+        cursor:pointer;
+        z-index:1001;
+    }
+
+    .burger span{
+        width:30px;
+        height:3px;
+        border-radius:10px;
+        background:white;
+        transition:.3s;
+    }
+
+    /* ANIMATION */
+
+    .burger.active span:nth-child(1){
+        transform:rotate(45deg) translateY(12px);
+    }
+
+    .burger.active span:nth-child(2){
+        opacity:0;
+    }
+
+    .burger.active span:nth-child(3){
+        transform:rotate(-45deg) translateY(-12px);
+    }
+}

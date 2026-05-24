@@ -1,0 +1,41 @@
+.status-badge{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    height:34px;
+
+    padding:0 14px;
+
+    border-radius:999px;
+
+    font-size:13px;
+    font-weight:600;
+}
+
+/* PENDING */
+
+.status-badge.pending{
+    background:
+        rgba(255,193,7,.14);
+
+    color:#ffd95e;
+}
+
+/* SUCCESS */
+
+.status-badge.success{
+    background:
+        rgba(76,175,80,.14);
+
+    color:#7dff82;
+}
+
+/* DANGER */
+
+.status-badge.danger{
+    background:
+        rgba(244,67,54,.14);
+
+    color:#ff8c84;
+}

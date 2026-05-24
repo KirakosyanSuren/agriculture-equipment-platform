@@ -1,0 +1,57 @@
+.section-top{
+    display:flex;
+    justify-content:space-between;
+    align-items:end;
+    margin-bottom:60px;
+    gap:30px;
+}
+
+.section-sub{
+    color:var(--green);
+    font-weight:700;
+    text-transform:uppercase;
+    letter-spacing:3px;
+    margin-bottom:14px;
+}
+
+.section-title{
+    font-family:'Oswald',sans-serif;
+    font-size:72px;
+    line-height:1;
+    text-transform:uppercase;
+}
+
+.section-desc{
+    color:#a8b0a8;
+    width:500px;
+    line-height:1.8;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width:1100px){
+
+    .section-title{
+        font-size:52px;
+    }
+}
+
+@media (max-width:850px){
+
+    .section-top{
+        flex-direction:column;
+        align-items:start;
+    }
+
+    .section-desc{
+        width:100%;
+    }
+}
+
+@media (max-width:650px){
+
+    .section-title{
+        font-size:42px;
+    }
+}

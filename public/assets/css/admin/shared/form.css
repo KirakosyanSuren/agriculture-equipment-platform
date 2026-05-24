@@ -1,0 +1,142 @@
+/* =========================================
+   FAQ CREATE PAGE
+========================================= */
+
+.admin-form-page{
+    padding:30px;
+    border-radius:28px;
+    background: rgba(255,255,255,.04);
+    border: 1px solid rgba(255,255,255,.05);
+    width: 60%;
+    margin: 0 auto;
+}
+
+/* TOP */
+
+.admin-page-top{
+    margin-bottom:35px;
+}
+
+.admin-page-top small{
+    display:block;
+
+    margin-bottom:8px;
+
+    color:rgba(255,255,255,.45);
+
+    letter-spacing:1px;
+}
+
+.admin-page-top h2{
+    font-size:30px;
+    font-weight:700;
+}
+
+/* FORM */
+
+.admin-form{
+    display:flex;
+    flex-direction:column;
+    gap:25px;
+}
+
+/* GRID */
+
+.form-grid{
+    display:grid;
+
+    grid-template-columns:
+    repeat(2,minmax(0,1fr));
+
+    gap:20px;
+}
+
+/* GROUP */
+
+.admin-form-group{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.admin-form-group label{
+    font-size:14px;
+    font-weight:600;
+
+    color:rgba(255,255,255,.75);
+}
+
+/* ACTIONS */
+
+.admin-form-actions{
+    display:flex;
+    align-items:center;
+    justify-content:flex-end;
+}
+
+/* ERRORS */
+
+.input-error{
+    color:#ff8f8f;
+
+    font-size:13px;
+}
+
+.back-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    height:52px;
+    padding:0 22px;
+    border-radius:16px;
+    background:
+        rgba(255,255,255,.06);
+
+    color:white;
+
+    font-size:14px;
+    font-weight:600;
+
+    transition:.3s;
+}
+
+.back-btn:hover{
+    background:
+        rgba(255,255,255,.12);
+}
+
+/* RESPONSIVE */
+
+@media(max-width:1400px) {
+    .admin-form-page {
+        width: 80%;
+    }
+}
+
+@media(max-width:768px){
+
+    .admin-form-page{
+        padding:20px;
+    }
+
+    .admin-page-top h2{
+        font-size:24px;
+    }
+
+    .admin-form-grid{
+        grid-template-columns:1fr;
+    }
+
+    .admin-form-actions{
+        justify-content:stretch;
+    }
+
+    .admin-form-actions .create-btn{
+        width:100%;
+    }
+
+    .form-grid {
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+
+}

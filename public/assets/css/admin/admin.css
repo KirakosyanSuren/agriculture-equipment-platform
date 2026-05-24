@@ -1,0 +1,41 @@
+@import url('./layout/auth.css');
+@import url('./layout/layout.css');
+@import url('./shared/sidebar.css');
+@import url('./shared/header.css');
+@import url('./shared/admin-buttons.css');
+@import url('./shared/table.css');
+@import url('./shared/modal.css');
+@import url('./shared/badges.css');
+@import url('./shared/form.css');
+@import url('./shared/checkbox.css');
+@import url('shared/file.css');
+@import url('../ui/input.css');
+@import url('../shared/pagination.css');
+@import url('../ui/alert.css');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --green:#66ff66;
+    --dark:#060b08;
+    --card:#0d1410;
+    --light:#d9fdd3;
+    --gray:#9da79d;
+    --border:rgba(255,255,255,.08);
+}
+
+body{
+    background:#030503;
+    color:white;
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}

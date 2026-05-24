@@ -1,0 +1,159 @@
+/* =========================================
+   SIDEBAR
+========================================= */
+
+.sidebar{
+    position:relative;
+
+    width:270px;
+
+    flex-shrink:0;
+
+    padding:30px;
+
+    border-right:
+        1px solid rgba(255,255,255,.05);
+
+    background:
+        linear-gradient(180deg,
+        #08130b,
+        #050805);
+
+    z-index:1000;
+}
+
+/* TOP */
+
+.sidebar-top{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+
+    margin-bottom:50px;
+}
+
+.sidebar-close{
+    display:none;
+    border:none;
+    background:none;
+    color:white;
+    font-size:24px;
+    cursor:pointer;
+    margin: 10px 0;
+}
+
+/* LOGO */
+
+.sidebar-logo {
+    margin-bottom: 15px;
+}
+
+.sidebar-logo span{
+    display:block;
+    font-size:30px;
+    font-weight:800;
+    color:#8cffb5;
+}
+
+.sidebar-logo small{
+    color:rgba(255,255,255,.45);
+    letter-spacing:2px;
+}
+
+/* NAV */
+
+.sidebar-nav{
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+
+.sidebar-nav a{
+    display:flex;
+    align-items:center;
+    height:52px;
+    padding:0 18px;
+    border-radius:16px;
+    color:rgba(255,255,255,.7);
+    transition:.3s;
+}
+
+.sidebar-nav a:hover,
+.sidebar-nav a.active{
+    background:
+        rgba(140,255,181,.08);
+
+    color:#8cffb5;
+}
+
+/* OVERLAY */
+
+.sidebar-overlay{
+    position:fixed;
+    inset:0;
+
+    background:
+        rgba(0,0,0,.45);
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:.3s;
+
+    z-index:999;
+}
+
+.sidebar-overlay.active{
+    opacity:1;
+    visibility:visible;
+}
+
+/* MOBILE BUTTON */
+
+.sidebar-toggle{
+    display:none;
+
+    width:46px;
+    height:46px;
+
+    border:none;
+    cursor:pointer;
+
+    border-radius:14px;
+
+    background:
+        rgba(255,255,255,.08);
+
+    color:white;
+
+    font-size:22px;
+}
+
+/* RESPONSIVE */
+
+@media(max-width:992px){
+
+    .sidebar{
+        position:fixed;
+        top:0;
+        left:-100%;
+        width:290px;
+        height:100vh;
+        transition:.3s;
+    }
+
+    .sidebar.active{
+        left:0;
+    }
+
+    .sidebar-close{
+        display:block;
+    }
+
+    .sidebar-toggle{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+    }
+
+}

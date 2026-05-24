@@ -1,0 +1,112 @@
+/* =========================================
+   BUTTONS
+========================================= */
+
+.create-btn{
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+
+    height:52px;
+
+    padding:0 24px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:
+        linear-gradient(135deg,
+        #8cffb5,
+        #58d98d);
+
+    color:#07110a;
+
+    font-size:14px;
+    font-weight:700;
+
+    transition:.3s;
+}
+
+.create-btn:hover{
+    transform:translateY(-2px);
+}
+
+/* ACTION BUTTONS */
+
+.edit-btn,
+.status-btn,
+.delete-btn{
+    height:38px;
+
+    padding:0 14px;
+
+    border:none;
+    cursor:pointer;
+
+    border-radius:12px;
+
+    font-size:13px;
+    font-weight:600;
+
+    transition:.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* EDIT */
+
+.edit-btn{
+    background:
+        rgba(72,149,239,.14);
+
+    color:#7cb8ff;
+}
+
+.edit-btn:hover{
+    background:
+        rgba(72,149,239,.22);
+}
+
+/* STATUS */
+
+.status-btn{
+    background:
+        rgba(255,193,7,.14);
+
+    color:#ffd95e;
+}
+
+.status-btn:hover{
+    background:
+        rgba(255,193,7,.22);
+}
+
+/* DELETE */
+
+.delete-btn{
+    background:
+        rgba(244,67,54,.14);
+
+    color:#ff8c84;
+}
+
+.delete-btn:hover{
+    background:
+        rgba(244,67,54,.22);
+}
+
+@media(max-width:768px){
+
+    .create-btn{
+        width:100%;
+    }
+
+    .edit-btn,
+    .status-btn,
+    .delete-btn{
+        width:100%;
+    }
+
+}
