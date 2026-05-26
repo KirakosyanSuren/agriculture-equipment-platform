@@ -1,7 +1,3 @@
-@push('styles')
-    <link rel="stylesheet" href="{{ asset('assets/css/admin/pages/login.css') }}">
-@endpush
-
 <x-admin.layout.auth>
     <section class="login-section">
 

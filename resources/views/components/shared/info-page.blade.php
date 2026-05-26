@@ -15,16 +15,6 @@
 ])
 
 <x-app :title="$title">
-    @push('styles')
-        <link rel="stylesheet" href="{{ asset('assets/css/shared/info-pages.css') }}">
-    @endpush
-
-    @push('scripts')
-        <script src="{{ asset('assets/js/cv.js') }}"></script>
-    @endpush
-
-    @stack('info-page-styles')
-
     <section class="info-page">
 
         <div class="container">

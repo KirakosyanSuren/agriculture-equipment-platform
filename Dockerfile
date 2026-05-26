@@ -25,6 +25,8 @@ RUN npm run build
 
 RUN touch database/database.sqlite
 
+RUN php artisan storage:link
+
 EXPOSE 10000
 
 CMD php artisan migrate --force --seed && \

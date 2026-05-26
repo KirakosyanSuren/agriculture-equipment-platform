@@ -1,7 +1,3 @@
-@push('info-page-styles')
-    <link rel="stylesheet" href="{{ asset('assets/css/pages/about.css') }}">
-@endpush
-
 <x-shared.info-page
     title="About Us"
     page_title="Built For Modern Agriculture"

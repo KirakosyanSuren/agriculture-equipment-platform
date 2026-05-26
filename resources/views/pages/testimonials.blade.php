@@ -1,8 +1,4 @@
 <x-app title="Customer Testimonials">
-    @push('styles')
-        <link rel="stylesheet" href="{{ asset('assets/css/pages/team.css') }}">
-    @endpush
-
     <section class="team-page">
 
         <!-- HERO -->

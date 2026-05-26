@@ -17,9 +17,8 @@
         {{ $title }}
     </title>
 
-    <link rel="stylesheet" href="{{ asset('assets/css/admin/admin.css') }}">
+    @vite(['resources/css/admin.css', 'resources/js/admin.js'])
 
-    @stack('styles')
 
 </head>
 <body>
@@ -76,12 +75,6 @@
     <x-ui.alert />
 
 </div>
-
-<script src="{{ asset('assets/js/admin/sidebar.js') }}"></script>
-<script src="{{ asset('assets/js/admin/modal.js') }}"></script>
-<script src="{{ asset('assets/js/admin/file.js') }}"></script>
-<script src="{{ asset('assets/js/alert.js') }}"></script>
-<script src="{{ asset('assets/js/filter-form.js') }}"></script>
 
 </body>
 </html>

@@ -1,9 +1,4 @@
 <x-app title="John Deere 8R 410">
-
-    @push('styles')
-        <link rel="stylesheet" href="{{ asset('assets/css/pages/product.css') }}">
-    @endpush
-
     <section class="single-inventory-page">
 
         <div class="container">
@@ -116,9 +111,4 @@
         </div>
 
     </section>
-
-    @push('scripts')
-        <script src="{{ asset('assets/js/gallery.js') }}"></script>
-    @endpush
-
 </x-app>

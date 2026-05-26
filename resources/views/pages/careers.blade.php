@@ -1,6 +1,3 @@
-@push('info-page-styles')
-    <link rel="stylesheet" href="{{ asset('assets/css/pages/careers.css') }}">
-@endpush
 <x-shared.info-page
     title="Careers"
     page_title="Build Your Career With AgroMach"

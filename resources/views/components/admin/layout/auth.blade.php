@@ -17,10 +17,6 @@
         {{ $title }}
     </title>
 
-    <link rel="stylesheet" href="{{ asset('assets/css/admin/admin.css') }}">
-
-    @stack('styles')
-
 </head>
 <body class="login-body">
 

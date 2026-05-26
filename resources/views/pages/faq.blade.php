@@ -1,11 +1,3 @@
-@push('info-page-styles')
-    <link rel="stylesheet" href="{{ asset('assets/css/pages/faq.css') }}">
-@endpush
-
-@push('scripts')
-    <script src="{{ asset('assets/js/faq.js') }}"></script>
-@endpush
-
 <x-shared.info-page
     title="FAQ"
     page_title="Frequently Asked Questions"

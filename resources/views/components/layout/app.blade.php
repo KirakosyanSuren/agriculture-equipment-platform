@@ -13,9 +13,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('assets/css/app.css') }}">
 
-    @stack('styles')
+
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
 </head>
 <body>
     <x-layout.header />
@@ -27,11 +27,6 @@
     <x-ui.alert />
 
     <x-layout.footer />
-
-    <script src="{{ asset('assets/js/header.js') }}"></script>
-    <script src="{{ asset('assets/js/filter-form.js') }}"></script>
-    <script src="{{ asset('assets/js/alert.js') }}"></script>
-    @stack('scripts')
 
 </body>
 </html>

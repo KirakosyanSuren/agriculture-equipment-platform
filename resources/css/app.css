@@ -1,3 +1,43 @@
+@import '../assets/css/careers/benefits.css';
+@import '../assets/css/careers/jobs.css';
+
+@import '../assets/css/contact/contact-card.css';
+
+@import '../assets/css/faq/faq.css';
+
+@import '../assets/css/home/cta.css';
+@import '../assets/css/home/features.css';
+@import '../assets/css/home/features-inventory.css';
+
+@import '../assets/css/inventory/inventory-top-bar.css';
+
+@import '../assets/css/layout/footer.css';
+@import '../assets/css/layout/header.css';
+
+@import '../assets/css/pages/about.css';
+@import '../assets/css/pages/careers.css';
+@import '../assets/css/pages/contact.css';
+@import '../assets/css/pages/contact-us.css';
+@import '../assets/css/pages/faq.css';
+@import '../assets/css/pages/home.css';
+@import '../assets/css/pages/inventory.css';
+@import '../assets/css/pages/product.css';
+@import '../assets/css/pages/team.css';
+
+@import '../assets/css/shared/feedback-form.css';
+@import '../assets/css/shared/hero.css';
+@import '../assets/css/shared/info-pages.css';
+@import '../assets/css/shared/inventory-card.css';
+@import '../assets/css/shared/pagination.css';
+@import '../assets/css/shared/stats.css';
+
+@import '../assets/css/team/team-card.css';
+
+@import '../assets/css/ui/alert.css';
+@import '../assets/css/ui/buttons.css';
+@import '../assets/css/ui/file-input.css';
+@import '../assets/css/ui/input.css';
+
 @import 'tailwindcss';
 
 @source '../../vendor/laravel/framework/src/Illuminate/Pagination/resources/views/*.blade.php';
@@ -7,5 +47,50 @@
 
 @theme {
     --font-sans: 'Instrument Sans', ui-sans-serif, system-ui, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
-        'Segoe UI Symbol', 'Noto Color Emoji';
+    'Segoe UI Symbol', 'Noto Color Emoji';
 }
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+:root{
+    --green:#66ff66;
+    --dark:#060b08;
+    --card:#0d1410;
+    --light:#d9fdd3;
+    --gray:#9da79d;
+    --border:rgba(255,255,255,.08);
+}
+
+body{
+    background:#030503;
+    color:white;
+    font-family:'Inter',sans-serif;
+    overflow-x:hidden;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+img{
+    width:100%;
+    display:block;
+}
+
+.container{
+    width:90%;
+    max-width:1400px;
+    margin:auto;
+}
+
+section {
+    padding: 120px 0;
+}
+
+
+
