@@ -23,9 +23,12 @@ class UpdateRequest extends FormRequest
      */
     public function rules(): array
     {
+
+        $inventory = $this->route('inventory');
+
         return [
             "title" => 'required',
-            "slug" => 'required|unique:inventories',
+            'slug' => 'required|unique:inventories,slug,' . $inventory->id,
             "brand_id" => 'required',
             "equipment_type_id" => 'required',
             "condition" => 'required',
