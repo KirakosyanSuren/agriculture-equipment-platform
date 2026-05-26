@@ -47,6 +47,10 @@ header{
     color:white;
 }
 
+.about_link {
+    display: flex;
+}
+
 .nav-links a:hover{
     color:var(--green);
 }

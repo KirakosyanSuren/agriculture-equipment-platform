@@ -17,10 +17,13 @@
         {{ $title }}
     </title>
 
+    @vite(['resources/css/admin.css', 'resources/js/admin.js'])
+
+
 </head>
 <body class="login-body">
 
-    {{ $slot }}
+{{ $slot }}
 
 </body>
 </html>

@@ -67,7 +67,7 @@
 
                 <x-ui.link
                     route="contact"
-                    class="dropdown-toggle"
+                    class="dropdown-toggle about_link"
                 >
                     About Us
 

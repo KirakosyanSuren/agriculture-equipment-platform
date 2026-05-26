@@ -25,27 +25,8 @@
                 <div class="inventory-top">
                     <div>
                         <h2>Inventory</h2>
-                        <p>Showing {{ $items->perPage() }} agricultural machines</p>
+                        <p>Showing {{ $items->count() }} agricultural machines</p>
                     </div>
-
-                    <x-ui.select
-                        class="sort-box"
-                        label="Sort By:"
-                        :options="[
-                            [
-                                'value' => 'newest',
-                                'label' => 'Newest'
-                            ],
-                            [
-                                'value' => 'low_price',
-                                'label' => 'Lowest Price'
-                            ],
-                            [
-                                'value' => 'highest_price',
-                                'label' => 'Highest Price'
-                            ]
-                        ]"
-                    />
 
                 </div>
 
