@@ -1,0 +1,28 @@
+services:
+  - type: web
+    name: laravel-app
+    runtime: php
+    plan: free
+
+    buildCommand: |
+      composer install --no-dev --optimize-autoloader
+      npm install
+      npm run build
+
+    startCommand: "php artisan migrate --seed --force && php artisan serve --host 0.0.0.0 --port $PORT"
+
+    envVars:
+      - key: APP_ENV
+        value: production
+
+      - key: APP_DEBUG
+        value: false
+
+      - key: DB_CONNECTION
+        value: sqlite
+
+      - key: PHP_VERSION
+        value: 8.4
+
+      - key: APP_KEY
+        sync: false
