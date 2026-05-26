@@ -23,9 +23,8 @@ RUN composer install --no-dev --optimize-autoloader
 RUN npm install
 RUN npm run build
 
+RUN mkdir -p database
 RUN touch database/database.sqlite
-
-RUN php artisan optimize:clear
 
 RUN chmod -R 777 storage bootstrap/cache
 
@@ -33,5 +32,5 @@ RUN php artisan storage:link
 
 EXPOSE 10000
 
-CMD php artisan migrate --force --seed && \
+CMD php artisan migrate:fresh --seed --force && \
     php artisan serve --host=0.0.0.0 --port=10000
